@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Contrato {{contrato.nombre_de_la_empresa}}</title>
+    <style type="text/css">
+      body {
+        font-weight: 200;
+        font-size: 14px;
+      }
+
+      .title {
+        text-align: left;
+        color: #007cae;
+        font-size: 22px;
+        font-weight: 100;
+        /* text-align: right;*/
+        padding: 10px 20px 0px 20px;
+      }
+      .title span {
+        color: #007cae;
+      }
+      .details,
+      .texto {
+        padding: 10px 20px 0px 20px;
+        text-align: left !important;
+        /*margin-left: 40%;*/
+      }
+      .hrItem {
+        border: none;
+        height: 1px;
+        /* Set the hr color */
+        color: #333; /* old IE */
+        background-color: #fff; /* Modern Browsers */
+      }
+
+      .sign {
+        padding-left: 90%;
+      }
+      #btn-accept {
+        border: none;
+        color: #ffffff;
+        padding: 15px 32px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        margin: 16px 0 !important;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #btn-accept {
+        border-radius: 3px;
+        background-color: white;
+        color: black;
+        border: 2px solid #f44336;
+      }
+      #btn-accept:hover {
+        background-color: #f44336;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      {% for c in contrato%}
+      <img src="img/LogoEmbi.jpg" alt="logo Embi" />
+      <p class="title">{{ c.nombre_del_contrato }}</p>
+    </div>
+    <div>
+      <div class="details">
+        Empresa: {{ c.nombre_de_la_empresa }}<br />
+        Fecha: {{ c.fecha }}<br />
+
+        <hr class="hrItem" />
+      </div>
+      <div class="texto">
+        <p>{{ c.contenido_del_contrato }}</p>
+      </div>
+    </div>
+    <div class="sign">
+      <input type="button" id="btn-accept" value="Acepto" />
+    </div>
+    {% endfor %}
+  </body>
+</html>

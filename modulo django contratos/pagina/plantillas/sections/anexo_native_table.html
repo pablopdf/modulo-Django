@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="anexo_native_table">
+      <table border="1">
+        <col />
+        <colgroup span="1"></colgroup>
+        <colgroup span="3"></colgroup>
+        <tr>
+          <th colspan="3" class="table_title" scope="colgroup">
+            Información de Campaña
+          </th>
+        </tr>
+        <tr class="table_2">
+          <th class="coll" scope="col">Dominio/<br />Domain:</th>
+          <th class="left" scope="col" colspan="2"><a href="{{domain}}" target="_blank">{{domain}}</a></th>
+        </tr>
+        <tr>
+          <th class="coll" scope="col">Producto/<br />Product:</th>
+          <th class="left" scope="col" colspan="2">{{product}}</th>
+        </tr>
+        <tr>
+          <th class="coll" scope="col">País/<br />Country:</th>
+          <th class="left" scope="col" colspan="2">{{country}}</th>
+        </tr>
+        <tr>
+          <th class="coll" scope="col">CPM:</th>
+          <th class="left" scope="col" colspan="2">{{cpm}}</th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

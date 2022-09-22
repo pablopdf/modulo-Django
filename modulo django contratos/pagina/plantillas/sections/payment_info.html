@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+    <table border="1">
+      <col />
+      <colgroup span="1"></colgroup>
+      <colgroup span="3"></colgroup>
+      <tr>
+        <th colspan="3" class="table_title" scope="colgroup">
+          Payment Information
+        </th>
+      </tr>
+      <tr class="table_2">
+        <th class="left" scope="col">Titular/<br />Holder: {{company_name}}</th>
+        <th class="left" scope="col">Ciudad/<br />City: {{city}}</th>
+        <th class="left" scope="col">Código Postal/<br />Zip Code: {{cp}}</th>
+      </tr>
+      <tr>
+        <th class="left" scope="col">País/<br />Country: {{pais}}</th>
+        <th class="left" scope="col">Banco/<br />Bank: {{bank}}</th>
+        <th class="left" scope="col">SWIFT: {{swift}}</th>
+      </tr>
+      <tr>
+        <th class="left" scope="col">ABA: {{aba}}</th>
+        <th class="left" scope="col">ROUTING: {{routing}}</th>
+        <th class="left" scope="col">CBU: {{cbu}}</th>
+      </tr>
+      <tr>
+        <th class="left" scope="col">Otro/<br />Other: {{other}}</th>
+        <th class="left" scope="col">Cuenta/<br />Account: {{account}}</th>
+        <th class="left" scope="col">Tipo/<br />Type: {{type}}</th>
+      </tr>
+      <tr>
+        <th class="left" scope="col">Moneda/<br />Currency: {{currency}}</th>
+        <th class="left" colspan="2">PayPal: {{paypal}}</th>
+      </tr>
+    </table>
+    <h3>
+      <ul>
+        <li>
+          El presente Contrato se encuentra redactado en dos versiones, una en
+          castellano y otra en inglés. En caso de discrepancia, la versión en
+          castellano será la que prevalezca.
+        </li>
+        <li>
+          This IO is written both in English and Spanish. Spanish version will
+          the one considered under disputes.
+        </li>
+      </ul>
+    </h3>
+  </div>
+  </body>
+</html>
