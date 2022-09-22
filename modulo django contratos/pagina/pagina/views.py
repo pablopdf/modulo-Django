@@ -38,7 +38,7 @@ def contrato2(request):
     data= {
         'contrato':contracts
     }
-    return render(request, 'contracts2.html', data)
+    return render(request, 'full contracts/contracts2.html', data)
 
 def prueba_template(request):
     contracts = Contrato.objects.get(id=1)    
@@ -87,3 +87,12 @@ def prueba_template(request):
 
         }
     return render(request, 'prueba.html', context)
+
+def checkbox(request):
+    ms = ['anexo_native_esp','anexo_native_eng','io_clientes','io_hb_esp','io_hb_eng','io_hb_esp_exc','io_int','io_partner']
+    if request.method == 'post':
+        contratocheck = request.post.getlist('contratos')
+        print(contratocheck)
+        if contratocheck == ['anexo_native_esp']:
+            print('selección Anexo Native Esp')
+    return render(request, 'sections/checkbox.html')

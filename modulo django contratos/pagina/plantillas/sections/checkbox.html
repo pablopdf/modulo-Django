@@ -147,9 +147,12 @@ input[type=checkbox]:focus {
 </head>
 <body>
     <form action="" method="post">
-        <label class="form-control" for="anexo_native">
-            <input type="checkbox" 
-            value="anexo_native" id="anexo_native" name="checkbox-anexo-native-esp" />
+      {% csrf_token %}
+      <div class="form-check">
+        <input type="checkbox" 
+        value="anexo_native_esp" id="anexo_native_esp" name="contratos" />
+      </div>
+        <label class="form-control" for="anexo_native_esp">
             Anexo Native Español
           </label>
           <label class="form-control">

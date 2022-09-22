@@ -27,6 +27,7 @@ urlpatterns = [
     path('pdf/', GeneradorDePDF.as_view()),
     path('prueba/', include('datos_pdf.urls') ),
     path('prueba_template/', prueba_template),
+    path('checkbox/', checkbox),
 ]
 
 #Esto es para cuando esta en modo desarrollo, cuando este en producción debe usarse un ENGINE X
